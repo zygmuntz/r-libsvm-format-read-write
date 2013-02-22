@@ -1,6 +1,6 @@
 # source( 'write_example.r' )
 
-source( 'f_write_libsvm.r' )
+source( 'f_write.libsvm.r' )
 
 input_file = 'data/example.csv'
 output_file = 'data/example.libsvm.txt'
@@ -13,4 +13,4 @@ d = read.csv( input_file, header = F )
 y = d[, label_index]
 x = d[, -label_index]
 
-write_libsvm( output_file, y, x )
+write.libsvm( output_file, y, x )

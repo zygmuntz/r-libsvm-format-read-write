@@ -3,7 +3,7 @@
 # y: a vector of labels, size n x 1
 # x: a matrix or data frame of observations, size n x k
 
-write_libsvm = function( filename, y, x ) {
+write.libsvm = function( filename, y, x ) {
 
 	# open an output file
 	f = file( filename, 'w' )
